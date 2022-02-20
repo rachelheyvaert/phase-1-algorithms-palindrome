@@ -1,7 +1,15 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let len = word.length;
+  let start = word.substring(0, Math.floor(len/2)).toLowerCase();
+  let end = word.substring(len - Math.floor(len/2)).toLowerCase();
+  //console.log(start, end);
+  let flip = end.split('').reverse().join('');
+  return(start === flip)
 }
-
+  // Write your algorithm here
+  //takes in one string argument ''
+  //return true // IF it reads the same forward -backwards
+  //return true if not
 /* 
   Add your pseudocode here
 */
